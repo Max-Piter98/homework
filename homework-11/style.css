@@ -1,0 +1,45 @@
+* {
+    background: #000;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.block__quad {
+    background: #382828;
+    width: 200px;
+    height: 200px;
+    line-height: 120px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+p {
+    background: none;
+    font-size: 40px;
+    color: #382828;
+    transition: 500ms 500ms;
+}
+
+.block__quad:hover p {
+    color: green;
+}
+
+.block__loading {
+    background: white;
+    width: 0px;
+    height: 25px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    transition-duration: 500ms;
+}
+
+.block__quad:hover .block__loading {
+    width: 600px;
+}
