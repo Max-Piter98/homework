@@ -59,7 +59,7 @@
         if (activeContent) {
             activeContent.classList.remove('tab-content--show')
         }
-        
+
         tabControl.classList.add('tab-controls__link--active')
         tabContent.classList.add('tab-content--show')
     }
@@ -76,7 +76,7 @@
             const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
             const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
             const accordionControl = e.target.closest('.accordion-list__control');
-        
+
             if (!accordionControl) return
 
             const accordionItem = accordionControl.parentElement;
@@ -95,8 +95,40 @@
                 accordionContent.style.maxHeight = null;
             }
 
-        });    
+        });
 
+    });
+
+    // Слайдер-галерея
+
+    const swiper = new Swiper('.gallery__slider', {
+
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+
+        pagination: {
+            el: '.gallery__pagination',
+            type: 'fraction'
+        },
+
+        navigation: {
+            nextEl: '.gallery__next',
+            prevEl: '.gallery__prev',
+        },
+
+        breakpoints: {
+            601: {
+                slidesPerView: 3,
+            },
+
+            801: {
+                spaceBetween: 32,
+            },
+
+            1101: {
+                slidesPerView: 4,
+            }
+        }
     });
 
 })()
