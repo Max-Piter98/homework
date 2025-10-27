@@ -40,8 +40,9 @@
     const swiper = new Swiper('.gallery__slider', {
 
         spaceBetween: 15,
-        slidesPerView: 3,
+        slidesPerView: 1,
         centeredSlides: true,
+        slidesPerView: 'auto',
         initialSlide: 1,
 
         // pagination: {
