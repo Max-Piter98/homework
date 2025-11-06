@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header-background"></div>
             <div class="header__top">
                 <div class="container">
@@ -34,6 +34,12 @@
                 </div>
             </div>
             <section class="header__hero hero">
+                <a class="button__consultation" href="tel:+821075269192">
+                    <div class="button__consultation-img">
+                        <img src="img/icon/headset.svg" alt="">
+                    </div>
+                    <span class="button__consultation-animation"></span>
+                </a>
                 <div class="container">
                     <div class="hero__inner">
                         <div class="hero__glare">
@@ -1218,6 +1224,12 @@
         <footer class="main__footer">
             <div class="job__separation"></div>
             <div class="main__footer-background"></div>
+            <a href="#header" class="button__up">
+                <div class="button__up-img">
+                    <img src="img/icon/arrow-up.svg" alt="">
+                </div>
+                <span class="button__up-animation"></span>
+            </a>
             <div class="container">
                 <div class="footer__inner">
                     <!-- <div class="footer__glare"></div> -->
@@ -1283,7 +1295,7 @@
             <div class="footer__copyright">
                 <div class="footer__line"></div>
                 <div class="footer__copyright-text">
-                    Copyright © 2021 VeraVla edu.  All rights reserved
+                    Copyright © 2021 VeraVla edu. All rights reserved
                 </div>
                 <div class="footer__line"></div>
             </div>
@@ -1300,6 +1312,355 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <h3 class="modal__title">
+                <span class="modal__span span">
+                    Записаться
+                </span>
+                на ознакомительный вебинар
+            </h3>
+            <form class="modal__form">
+                <label class="modal__form-label field">
+                    <span>Ваше ФИО:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input" type="" placeholder="Иван Иванович Иванов">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Номер телефона:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input field__input--tel" maxlength="18" id="phone" type="tel"
+                                placeholder="+7 (___) ___-__-__">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Ваш e-mail</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input" type="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Выберите дату и время вебинара:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input field__input--date" maxlength="10" id="day"
+                                placeholder="__.__.____">
+                        </div>
+                    </div>
+                </label>
+                <button class="modal-button button" type="submit">
+                    записаться
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal__school">
+        <div class="modal__school-window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <div class="modal__school-scroll">
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-1.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-2.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-3.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-4.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-1.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-2.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__job">
+        <div class="modal__job-window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <div class="modal__school-scroll">
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-4.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-3.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-2.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-1.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-4.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <img src="img/content/gallery-3.png" alt="">
+                    <div class="modal__school-glare"></div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/swiper-bundle.min.js"></script>
