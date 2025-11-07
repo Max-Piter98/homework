@@ -2144,8 +2144,8 @@ body {
     }
 
     .header__top-inner {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .header__hero-img-1 {
@@ -2154,13 +2154,13 @@ body {
     }
 
     .hero__inner {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .intelligence__inner {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -2182,15 +2182,17 @@ body {
 }
 
 @media (max-width: 900px) {
+
     .hero__inner {
         display: flex;
         justify-content: center;
-        margin-bottom: 300px;
+        margin-bottom: 70px;
     }
-
+    
     .hero__content {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: none;
         display: flex;
         flex-direction: column;
@@ -2199,9 +2201,17 @@ body {
         width: 100%;
     }
 
+    .advantage {
+        margin-bottom: 300px;
+    }
+
+    .advantage__text {
+        text-align: left;
+    }
+
     .header__hero-img-1 {
         max-width: 1500px;
-        top: 80%;
+        top: 40%;
         left: 0%;
     }
 
@@ -2217,8 +2227,8 @@ body {
 
     .reasons__title {
         font-size: 44px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: none;
         display: flex;
         flex-direction: column;
@@ -2229,8 +2239,8 @@ body {
 
     .reasons__content-flex-1 {
         max-width: none;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2259,8 +2269,8 @@ body {
 
     .reasons__content-flex-2 {
         max-width: none;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2287,8 +2297,8 @@ body {
         padding-top: 70px;
         display: flex;
         justify-content: center;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: none;
         flex-direction: column;
         align-items: center;
@@ -2298,8 +2308,8 @@ body {
 
     .intelligence__title {
         font-size: 44px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: none;
         display: flex;
         flex-direction: column;
@@ -2333,12 +2343,17 @@ body {
 }
 
 @media (max-width: 800px) {
+
     html {
         scroll-padding-top: 50px;
     }
 
+    .header__hero-img-1 {
+        top: 45%;
+    }
+
     .hero__title {
-        font-size: 80px;
+        font-size: 85px;
     }
 
     /* ---------------------------------- */
@@ -2362,8 +2377,8 @@ body {
 
 @media (max-width: 600px) {
     .header__top-inner {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
         max-width: none;
         display: flex;
         flex-direction: column;
@@ -2377,12 +2392,16 @@ body {
         margin-bottom: 50px;
     }
 
-    .hero__inner {
-        margin-bottom: 200px;
+    .header__hero-img-1 {
+        top: 50%;
     }
 
     .hero__title {
-        font-size: 70px;
+        font-size: 77px;
+    }
+
+    .advantage {
+        margin-bottom: 200px;
     }
 
     .button {
@@ -2410,7 +2429,7 @@ body {
 @media (max-width: 550px) {
 
     .hero__title {
-        font-size: 60px;
+        font-size: 67px;
     }
 
     /* ---------------------------------- */
@@ -2420,7 +2439,7 @@ body {
     }
 
     /* ---------------------------------- */
-
+    
     .main__intelligence-img {
         top: 57%;
     }
@@ -2436,6 +2455,25 @@ body {
 
 @media (max-width: 500px) {
 
+    .hero__title {
+        font-size: 60px;
+    }
+    
+    .hero__text {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .advantage {
+        margin-bottom: 150px;
+    }
+
+    .advantage__text {
+        font-size: 14px;
+    }
+    
+    /* ---------------------------------- */
+    
     .main__intelligence-img {
         top: 60%;
     }
@@ -2446,6 +2484,15 @@ body {
     .hero__inner {
         margin-bottom: 100px;
     }
+
+    .hero__span {
+        margin-bottom: 20px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+
 
     /* ---------------------------------- */
 
@@ -2466,4 +2513,68 @@ body {
     .intelligence-check {
         margin-bottom: 250px;
     }
+}
+
+@media (max-width: 400px) {
+
+    .hero__inner {
+        margin-bottom: 30px;
+    }
+
+    .hero__span {
+        font-size: 14px;
+    }
+
+    .hero__title {
+        font-size: 42px;
+    }
+
+    .hero__text {
+        margin-bottom: 30px;
+    }
+
+    .advantage {
+        margin-bottom: 100px;
+    }
+    .advantage__text {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 6px;
+        font-weight: 500;
+        padding: 15px 20px;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .hero__span {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .hero__title {
+        font-size: 35px;
+        margin-bottom: 8px;
+    }
+
+    .hero__text {
+        font-size: 10px;
+    }
+
+
+}
+
+@media (max-width: 300px) {
+
+    .hero__span {
+        font-size: 10px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
 }
