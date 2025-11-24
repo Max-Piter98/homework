@@ -160,7 +160,7 @@ accordionLists.forEach(el => {
 
 const swiper = new Swiper('.gallery__slider', {
 
-    spaceBetween: 15,
+    spaceBetween: 80,
     slidesPerView: 1,
     centeredSlides: true,
     slidesPerView: 'auto',
@@ -176,17 +176,46 @@ const swiper = new Swiper('.gallery__slider', {
         prevEl: '.nav__prev',
     },
 
-    // breakpoints: {
-    //     601: {
-    //         slidesPerView: 3,
-    //     },
+    breakpoints: {
 
-    //     801: {
-    //         spaceBetween: 32,
-    //     },
-
-    //     1101: {
-    //         slidesPerView: 4,
-    //     }
-    // }
+        401: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+        501: {
+            slidesPerView: 1.8,
+            spaceBetween: 20,
+        },
+        601: {
+            slidesPerView: 2.1,
+            spaceBetween: 20,
+        },
+        701: {
+            slidesPerView: 2.4,
+            spaceBetween: 20,
+        },
+        801: {
+            slidesPerView: 2.7,
+            spaceBetween: 20,
+        },
+        901: {
+            slidesPerView: 2.3,
+        },
+        951: {
+            slidesPerView: 2.6,
+        },
+        1101: {
+            slidesPerView: 3,
+        },
+        1301: {
+            slidesPerView: 3.5,
+        },
+        1501: {
+            slidesPerView: 3.9,
+        },
+        1601: {
+            slidesPerView: 4.2,
+            spaceBetween: 20,
+        }
+    }
 });
