@@ -2634,10 +2634,17 @@ body {
 
     .modal__school-window {
         max-width: 320px;
-        height: 800px;
+        height: 530px;
         padding: 50px 20px;
         border-radius: 10px;
     }
+
+    .modal__school-scroll {
+    max-width: 100%;
+    height: 450px;
+    border-radius: var(--border-radius-img);
+    overflow-y: auto;
+}
 
     .modal__school-slide {
         position: relative;
