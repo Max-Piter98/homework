@@ -1,0 +1,45 @@
+.header {
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-47.00deg, rgba(1.77083420753479, 34.63749313354492, 53.125, 1), rgba(4.050780296325684, 57.52109909057617, 64.8125, 1) 100%);
+}
+
+.header__top {
+    padding-top: 46px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 155px;
+    position: relative;
+}
+
+.header__logo {
+    position: relative;
+    z-index: 1;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 18px;
+}
+
+.phone__tel {
+    color: var(--general-text);
+    transition: var(--transition);
+}
+
+.phone__tel:hover {
+    color: var(--accent-text);
+}

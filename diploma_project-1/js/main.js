@@ -166,11 +166,6 @@ const swiper = new Swiper('.gallery__slider', {
     slidesPerView: 'auto',
     initialSlide: 1,
 
-    // pagination: {
-    //     el: '.gallery__pagination',
-    //     type: 'fraction'
-    // },
-
     navigation: {
         nextEl: '.nav__next',
         prevEl: '.nav__prev',
