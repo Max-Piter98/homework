@@ -29,9 +29,6 @@ const createTodo = (todos, text) => {
     const newTodo = {
         [todoKeys.id]: getNewTodoId(todos),
         [todoKeys.text]: text,
-        // 
-        [todoKeys.day]: day,
-        // 
         [todoKeys.is_completed]: false,
     };
     todos.push(newTodo);
