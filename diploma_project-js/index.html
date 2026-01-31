@@ -1,873 +1,1793 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/index.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-		<link
-			rel="shortcut icon"
-			href="./icons/nike-favicon-48x48.ico"
-			type="image/x-icon"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-			defer
-		></script>
-		<script src="./js/fslightbox.js" type="module"></script>
-		<script src="./js/index.js" type="module"></script>
-		<title>Nike Air Mag</title>
-	</head>
-	<body class="page__body">
-		<header class="header">
-			<div class="container header__container">
-				<a class="logo header__logo" href="#">
-					<img
-						class="logo__img"
-						src="./icons/logo-icon.svg"
-						width="50"
-						height="20"
-						alt="Логотип Nike"
-					/>
-				</a>
-				<nav
-					class="menu header__menu"
-					id="header__menu"
-					aria-label="Главное меню"
-				>
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#sizes">Размеры</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#characteristics">Характеристики</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#top-models">Другие ТОП модели</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__controls">
-					<a class="header__order" href="#">Сделать заказ</a>
-					<div class="header__actions">
-						<button
-							class="header__actions-button"
-							title="Поиск"
-							aria-label="Поиск"
-						>
-							<svg width="24" height="24">
-								<use
-									class="header__actions-icon"
-									href="./icons/sprite.svg#search"
-								></use>
-							</svg>
-						</button>
-						<button
-							class="header__actions-button"
-							title="Корзина"
-							aria-label="Корзина"
-						>
-							<svg width="24" height="24">
-								<use
-									class="header__actions-icon"
-									href="./icons/sprite.svg#cart"
-								></use>
-							</svg>
-						</button>
-						<button
-							class="header__burger burger"
-							aria-label="Открыть меню"
-							aria-expanded="false"
-							aria-controls="header__menu"
-						>
-							<svg width="24" height="24">
-								<use
-									class="burger__icon-menu"
-									href="./icons/sprite.svg#burger"
-								></use>
-								<use
-									class="burger__icon-cross"
-									href="./icons/sprite.svg#cross"
-								></use>
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main class="main">
-			<section class="hero">
-				<div class="container hero__container">
-					<header class="hero__header">
-						<ul class="hero__benefits-list">
-							<li class="hero__benefits-item">стиль</li>
-							<li class="hero__benefits-item">скорость</li>
-						</ul>
-						<h1 class="hero__title">
-							Nike <span class="hero__title-accent">air</span> mag
-						</h1>
-					</header>
-					<picture>
-						<source srcset="./images/nike-air-mag-1.webp" type="image/webp" />
-						<img
-							class="hero__img"
-							src="./images/nike-air-mag-1.png"
-							width="846"
-							height="713"
-							alt="Кроссовок Nike Air Mag с желтым кольцом под подошвой"
-						/>
-					</picture>
-					<footer class="hero__footer">
-						<a class="hero__details" href="#">
-							Подробнее
-							<svg width="24" height="24">
-								<use
-									class="hero__details-icon"
-									href="./icons/main-sprite.svg#arrow-right"
-								></use>
-							</svg>
-						</a>
-					</footer>
-				</div>
-			</section>
-			<section id="air-mag" class="air-mag">
-				<div class="container">
-					<h2 class="air-mag__title title-md">Air Mag</h2>
-					<p class="air-mag__description text-regular">
-						Это не просто кроссовки — это шаг в будущее. С уникальным дизайном и
-						передовыми технологиями, эти кроссовки вдохновлены легендарной
-						киноделией и готовы сопровождать вас в любых приключениях.
-					</p>
-					<div class="air-mag__info-wrapper">
-						<picture>
-							<source srcset="./images/nike-air-mag-2.webp" type="image/webp" />
-							<img
-								class="air-mag__img"
-								src="./images/nike-air-mag-2.png"
-								width="911"
-								height="635"
-								loading="lazy"
-								alt="Кроссовки Nike Air Mag с желтым кольцом вокруг"
-							/>
-						</picture>
-						<ul class="air-mag__info-list text-light">
-							<li class="air-mag__info-item">
-								инновационная технология амортизации, которая обеспечивает
-								непревзойденную поддержу суставов
-							</li>
-							<li class="air-mag__info-item">
-								высококачественные синтетические материалы для долговечности
-								и комфорта
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section id="sizes" class="sizes section">
-				<div class="container">
-					<h2 class="sizes__title title-md section-title">Размеры</h2>
-					<section class="product">
-						<div class="product__slider-wrapper">
-							<button
-								class="product__slider-button product__slider-button--prev"
-								aria-label="Предыдущий слайд"
-							>
-								<svg width="40" height="40">
-									<use
-										class="product__slider-button-icon"
-										href="./icons/main-sprite.svg#double-arrow"
-									></use>
-								</svg>
-							</button>
-							<div class="swiper product__slider">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="product__slide-inner">
-											<picture>
-												<source
-													srcset="
-														./images/product-slides/nike-air-mag-slide-1.webp
-													"
-												/>
-												<img
-													src="./images/product-slides/nike-air-mag-slide-1.png"
-													class="product__slide-img"
-													width="357"
-													height="375"
-													alt="Кроссовки Nike Air Mag, вид спереди"
-												/>
-											</picture>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__slide-inner">
-											<picture>
-												<source
-													srcset="
-														./images/product-slides/nike-air-mag-slide-2.webp
-													"
-												/>
-												<img
-													src="./images/product-slides/nike-air-mag-slide-2.png"
-													class="product__slide-img"
-													width="408"
-													height="375"
-													alt="Кроссовки Nike Air Mag, вид сзади"
-												/>
-											</picture>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="product__slide-inner">
-											<picture>
-												<source
-													srcset="
-														./images/product-slides/nike-air-mag-slide-3.webp
-													"
-												/>
-												<img
-													src="./images/product-slides/nike-air-mag-slide-3.png"
-													class="product__slide-img"
-													width="442"
-													height="375"
-													alt="Кроссовки Nike Air Mag, вид сбоку"
-												/>
-											</picture>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button
-								class="product__slider-button product__slider-button--next"
-								aria-label="Следующий слайд"
-							>
-								<svg width="40" height="40">
-									<use
-										class="product__slider-button-icon"
-										href="./icons/main-sprite.svg#double-arrow"
-									></use>
-								</svg>
-							</button>
-						</div>
-						<h3 class="product__title title-sm">
-							Кроссовки
-							<strong class="product__title-accent">Air Mag Back</strong> To
-							Future
-						</h3>
-						<p class="product__description text-light">
-							Nike Air Mag — это кусочек киноистории и технологического
-							прогресса. Если вы ищете уникальную пару кроссовок, которая станет
-							не только стильным аксессуаром, но и ценным дополнением вашей
-							коллекции, Nike Air Mag — идеальный выбор.
-						</p>
-						<p class="product__price title-sm">36 490 ₽</p>
-						<div class="product__sizes-wrapper">
-							<section class="product__sizes">
-								<h4 class="product__sizes-title product__sizes-title--in-stock">
-									Размеры в наличии
-								</h4>
-								<div class="product__sizes-list" data-sizes="list">
-									<button
-										class="product__sizes-button"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										38
-									</button>
-									<button
-										class="product__sizes-button"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										40
-									</button>
-									<button
-										class="product__sizes-button product__sizes-button--active"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										41
-									</button>
-									<button
-										class="product__sizes-button"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										42
-									</button>
-									<button
-										class="product__sizes-button"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										44
-									</button>
-									<button
-										class="product__sizes-button"
-										aria-label="Выбрать размер"
-										title="Выбрать размер"
-										data-sizes="button"
-									>
-										45
-									</button>
-								</div>
-								<div class="product__buy-wrapper">
-									<button
-										class="product__buy-button"
-										data-modal-button="buy"
-										data-modal-speed="300"
-									>
-										Купить в 1 клик
-									</button>
-									<button
-										class="product__cart-button"
-										aria-label="Добавить в корзину"
-										title="Добавить в корзину"
-									>
-										<img
-											src="./icons/cart-icon.svg"
-											width="23"
-											height="23"
-											loading="lazy"
-											alt="Корзина"
-										/>
-									</button>
-								</div>
-							</section>
-							<section class="product__sizes">
-								<h4 class="product__sizes-title product__sizes-title--to-order">
-									Размеры под заказ
-								</h4>
-								<div class="product__sizes-list">
-									<button class="product__sizes-button" disabled>36</button>
-									<button class="product__sizes-button" disabled>37</button>
-									<button class="product__sizes-button" disabled>43</button>
-									<button class="product__sizes-button" disabled>46</button>
-									<button class="product__sizes-button" disabled>47</button>
-								</div>
-								<a class="product__sizes-order-link" href="#">
-									Заказать размер
-								</a>
-							</section>
-						</div>
-					</section>
-				</div>
-			</section>
-			<section id="characteristics" class="characteristics section">
-				<div class="container">
-					<h2 class="characteristics__title title-md section-title">
-						Характеристики
-					</h2>
-					<div class="characteristics__video">
-						<picture>
-							<source
-								srcset="./images/characteristics-video-preview.webp"
-								type="image/webp"
-							/>
-							<img
-								class="characteristics__video-preview"
-								src="./images/characteristics-video-preview.jpg"
-								width="1240"
-								height="600"
-								loading="lazy"
-								alt="Кроссовки Nike Air Mag лежат на жёлтой коробке"
-							/>
-						</picture>
-						<a
-							class="characteristics__video-play-link"
-							href="https://www.youtube.com/watch?v=VRGdQaE6gMY"
-							title="Запустить видео"
-							data-fslightbox
-						>
-							<img
-								class="characteristics__video-play-icon"
-								src="./icons/play-icon.svg"
-								width="17"
-								height="24"
-								alt="Запустить видео"
-							/>
-						</a>
-					</div>
-					<div class="characteristics__list">
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#planet"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Футуристический дизайн
-							</h3>
-							<p class="characteristics__card-description">
-								Nike Air Mag выделяются своим уникальным и оригинальным
-								дизайном, который сразу же привлекает внимание. Эта модель
-								создана для тех, кто ценит стиль, вдохновленный наукой и
-								фантастикой
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#laces"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Автоматическая шнуровка
-							</h3>
-							<p class="characteristics__card-description">
-								Инновационная система автоматической шнуровки обеспечивает
-								идеальную фиксацию обуви на ноге без необходимости вручную
-								завязывать шнурки, что значительно повышает комфорт
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#block"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Ограниченный выпуск
-							</h3>
-							<p class="characteristics__card-description">
-								Nike Air Mag были выпущены в ограниченном количестве, что делает
-								каждую пару желанным объектом для коллекционеров и любителей
-								уникальных кроссовок
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#bulb"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Встроенная подсветка
-							</h3>
-							<p class="characteristics__card-description">
-								Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
-								темное время суток. Это придает им еще больше оригинальности и
-								уникальности
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#sneakers"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Комфорт и поддержка
-							</h3>
-							<p class="characteristics__card-description">
-								Модель предлагает высокий уровень комфорта благодаря
-								качественной амортизации и поддержке стопы, что делает их
-								идеальными для длительного ношения
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#materials"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Современные материалы
-							</h3>
-							<p class="characteristics__card-description">
-								Nike Air Mag изготовлены из высококачественных синтетических
-								материалов, которые обеспечивают долговечность, устойчивость к
-								износу и легкость в уходе
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#runner"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Хорошая сцепляемость
-							</h3>
-							<p class="characteristics__card-description">
-								Подошва кроссовок обладает отличным сцеплением с различными
-								поверхностями, что обеспечивает надежность при ходьбе и беге
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#diamond"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Культовый статус
-							</h3>
-							<p class="characteristics__card-description">
-								Nike Air Mag стали культовыми благодаря своему появлению в кино
-								"Назад в будущее 2", что подчеркивает их историческую и
-								культурную значимость
-							</p>
-						</article>
-						<article class="characteristics__card">
-							<svg class="characteristics__card-icon" width="56" height="56">
-								<use href="./icons/characteristics-sprite.svg#firework"></use>
-							</svg>
-							<h3 class="characteristics__card-title title-xs">
-								Яркое дополнение к любому образу
-							</h3>
-							<p class="characteristics__card-description">
-								Кроссовки легко вписываются в различные стили одежды, позволяя
-								создавать уникальные образы. Они могут дополнить как спортивный,
-								так и повседневный стиль
-							</p>
-						</article>
-					</div>
-				</div>
-			</section>
-			<section id="top-models" class="top-models section">
-				<div class="container">
-					<h2 class="top-models__title title-md section-title">
-						Другие <span class="top-models__title-accent">Топ</span> модели от
-						Nike
-					</h2>
-					<div class="top-models__products">
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Nike Air Yeezy 2 “Red October”
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-1.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-1.png"
-										width="190"
-										height="143"
-										loading="lazy"
-										alt="Кроссовки Nike Air Yeezy 2 “Red October”"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Wings x Air Jordan 1
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-2.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-2.png"
-										width="190"
-										height="120"
-										loading="lazy"
-										alt="Кроссовки Wings x Air Jordan 1"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Nike Dunk SB Low Yellow Lobster
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-3.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-3.png"
-										width="190"
-										height="88"
-										loading="lazy"
-										alt="Кроссовки Nike Dunk SB Low Yellow Lobster"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										DJ Khaled x Air Jordan 3 “Grateful”
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-4.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-4.png"
-										width="190"
-										height="136"
-										loading="lazy"
-										alt="Кроссовки DJ Khaled x Air Jordan 3 “Grateful”"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Nike SB Dunk Low Freddy Krueger
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-5.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-5.png"
-										width="190"
-										height="94"
-										loading="lazy"
-										alt="Кроссовки Nike SB Dunk Low Freddy Krueger"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Air Jordan 10 x OVO
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-6.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-6.png"
-										width="190"
-										height="97"
-										loading="lazy"
-										alt="Кроссовки Air Jordan 10 x OVO"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Air Jordan 12 Flu-Game
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-7.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-7.png"
-										width="190"
-										height="111"
-										loading="lazy"
-										alt="Кроссовки Air Jordan 12 Flu-Game"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Air Jordan 1 “Shattered Backboard” 1985
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-8.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-8.png"
-										width="190"
-										height="101"
-										loading="lazy"
-										alt="Кроссовки Air Jordan 1 “Shattered Backboard” 1985"
-									/>
-								</picture>
-							</a>
-						</article>
-						<article class="top-models__product">
-							<a class="top-models__product-link" href="#">
-								<div class="top-models__product-content">
-									<h3 class="top-models__product-title title-xs">
-										Kanye West Nike Air Yeezy 1 “Prototype”
-									</h3>
-									<svg width="24" height="24">
-										<use
-											class="top-models__product-icon"
-											href="./icons/main-sprite.svg#arrow-right"
-										></use>
-									</svg>
-								</div>
-								<picture class="top-models__product-img-wrapper">
-									<source
-										srcset="./images/top-models/top-model-9.webp"
-										type="image/webp"
-									/>
-									<img
-										class="top-models__product-img"
-										src="./images/top-models/top-model-9.png"
-										width="190"
-										height="147"
-										loading="lazy"
-										alt="Кроссовки Kanye West Nike Air Yeezy 1 “Prototype”"
-									/>
-								</picture>
-							</a>
-						</article>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container footer__container">
-				<a class="logo footer__logo" href="#">
-					<img
-						class="logo__img"
-						src="./icons/logo-icon.svg"
-						width="50"
-						height="20"
-						alt="Логотип Nike"
-					/>
-				</a>
-				<nav class="menu footer__menu" aria-label="Главное меню">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a class="menu__link" href="#air-mag" lang="en">Air Mag</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#sizes">Размеры</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#characteristics">Характеристики</a>
-						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#top-models">Другие ТОП модели</a>
-						</li>
-					</ul>
-				</nav>
-				<a class="footer__phone" href="tel:+79292992929">+7 (929) 299-29-29</a>
-			</div>
-		</footer>
-		<div class="modal">
-			<div class="modal__window modal-buy" data-modal-window="buy">
-				<button
-					class="modal__close"
-					aria-label="Закрыть"
-					title="Закрыть"
-					data-modal-close
-				>
-					<svg width="24" height="24">
-						<use href="./icons/sprite.svg#cross"></use>
-					</svg>
-				</button>
-				<div class="modal__content modal-buy__content">
-					<h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
-					<form class="modal-buy__form">
-						<label class="modal-buy__label">
-							<input
-								class="modal-buy__input"
-								type="text"
-								placeholder="Ваше имя"
-								name="name"
-								required
-							/>
-						</label>
-						<label class="modal-buy__label">
-							<input
-								class="modal-buy__input"
-								type="tel"
-								placeholder="Номер телефона"
-								name="phone"
-								required
-							/>
-						</label>
-						<label class="modal-buy__label">
-							<input
-								class="modal-buy__input"
-								type="email"
-								placeholder="E-mail"
-								name="email"
-								required
-							/>
-						</label>
-						<button class="modal-buy__submit">Отправить</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeraVla edu</title>
+    <link rel="shortcut icon" href="img/icon/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="header-background"></div>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <a class="header__logo" href="#">
+                            <img src="img/icon/logo.svg" alt="Логотип компании">
+                        </a>
+                        <div class="phone">
+                            <div class="phone_logo">
+                                <img src="img/icon/phone.svg" alt="">
+                            </div>
+                            <a href="tel:+821075269192" class="phone__tel">
+                                + 82 (10) 7526-9192
+                            </a>
+                        </div>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#reasons" class="nav__link">
+                                        <h2 class="title-nav">
+                                            <span class="reasons__span span">
+                                                7 причин
+                                            </span>
+                                            почему именно мы?
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#intelligence" class="nav__link">
+                                        <h2 class="title-nav">
+                                            <span class="intelligence__span span">
+                                                Искусственный интеллект
+                                            </span>
+                                            - это круто?
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#info" class="nav__link">
+                                        <h2 class="title-nav">
+                                            <span class="info__span span">
+                                                Важно
+                                            </span>
+                                            понимать что
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#why" class="nav__link">
+                                        <h2 class="title-nav">
+                                            Почему именно наш курс?
+                                            <span class="info__span span">
+                                                Все просто!
+                                            </span>
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#list" class="nav__link">
+                                        <h2 class="title-nav">
+                                            <span class="list__span span">
+                                                Что я узнаю
+                                            </span>
+                                            из этих курсов?
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#author" class="nav__link">
+                                        <h2 class="title-nav">
+                                            Автор курса
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#school" class="nav__link">
+                                        <h2 class="title-nav">
+                                            Объявления школы
+                                        </h2>
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#job" class="nav__link">
+                                        <h2 class="title-nav">
+                                            Вакансии
+                                        </h2>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="burger-icon" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="header__hero hero">
+                <a class="button__consultation" href="tel:+821075269192">
+                    <div class="button__consultation-img">
+                        <img src="img/icon/headset.svg" alt="">
+                    </div>
+                    <span class="button__consultation-animation"></span>
+                </a>
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__glare">
+                            <div class="hero__glare-1"></div>
+                            <div class="hero__glare-2"></div>
+                            <div class="hero__glare-3"></div>
+                            <div class="hero__glare-4"></div>
+                            <div class="hero__glare-5"></div>
+                            <div class="hero__glare-6"></div>
+                            <div class="hero__glare-7"></div>
+                            <div class="hero__glare-8"></div>
+                            <div class="hero__glare-9"></div>
+                            <div class="hero__glare-10"></div>
+                            <div class="hero__glare-11"></div>
+                            <div class="hero__glare-12"></div>
+                            <div class="hero__glare-13"></div>
+                        </div>
+                        <div class="header__hero-img-1">
+                            <img src="img/decor/neuron_1.png" alt="Нейрон 1">
+                        </div>
+                        <div class="header__hero-img-2">
+                            <img src="img/decor/neuron_2.png" alt="Нейрон 2">
+                        </div>
+                        <div class="header__hero-img-3">
+                            <img src="img/decor/neuron_3.png" alt="Нейрон 3">
+                        </div>
+                        <div class="hero__content">
+                            <div class="hero__span">
+                                <span>
+                                    Добро пожаловать в онлайн школу
+                                </span>
+                            </div>
+                            <h1 class="hero__title title">
+                                VeraVla edu!
+                            </h1>
+                            <p class="hero__text">
+                                Переквалифицируйся в разработчика искусственного интеллекта и получи
+                                высокооплачиваемую
+                                работу
+                            </p>
+                            <div class="advantage">
+                                <div class="hero__border border">
+                                    <div class="advantage-img">
+                                        <img src="img/icon/diploma.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="advantage__text">
+                                    <p class="advantage__text-1">
+                                        Мы обучаем с гарантией!
+                                    </p>
+                                    <p class="advantage__text-2">
+                                        Первый месяц действует гарантия 100% возврата
+                                        денег, если тебя не устроят наши курсы
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#" class="hero__button button">
+                                Записаться на ознакомительный вебинар
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__separation"></div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="main__reasons" id="reasons">
+                <div class="hero__separation"></div>
+                <div class="main__reasons-background"></div>
+                <div class="container">
+                    <div class="reasons__inner">
+                        <h2 class="reasons__title title">
+                            <span class="reasons__span span">
+                                7 причин
+                            </span>
+                            почему именно мы?
+                        </h2>
+                        <div class="reasons__content">
+                            <div class="reasons__content-flex-1">
+                                <div class="reasons__border-1 border">
+                                    <div class="reasons__border-glare-1"></div>
+                                    <div class="reasons__cell-1">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/manager.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-1">
+                                                Ты станешь востребованным специалистом в области искусственного
+                                                интеллекта
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reasons__border-1 border">
+                                    <div class="reasons__border-glare-1"></div>
+                                    <div class="reasons__cell-1">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/blockchain_technology.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-1">
+                                                Будешь создавать свои модели искусственного интеллекта на языке
+                                                программирования
+                                                Python
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reasons__border-1 border">
+                                    <div class="reasons__border-glare-1"></div>
+                                    <div class="reasons__cell-1">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/web_design.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-1">
+                                                Сумеешь создавать программы, связанные
+                                                с компьютерным зрением и нейронными сетями.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reasons__border-1 border">
+                                    <div class="reasons__border-glare-1"></div>
+                                    <div class="reasons__cell-1">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/survey.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-1">
+                                                Мы обучаем только тому, что тебе пригодится
+                                                во время работы!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reasons__content-flex-2">
+                                <div class="reasons__border-2 border">
+                                    <div class="reasons__border-glare-2"></div>
+                                    <div class="reasons__cell-2">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/people.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-2">
+                                                Ты найдешь единомышленников,
+                                                с которыми сможешь создавать свои проекты
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reasons__border-2 border">
+                                    <div class="reasons__border-glare-2"></div>
+                                    <div class="reasons__cell-2">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/conference.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-2">
+                                                Мы создаём сообщество профессионалов, таких же как и мы, жаждущих
+                                                развивать
+                                                и
+                                                изменять этот мир к лучшему с помощью IT технологий
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reasons__border-2 border">
+                                    <div class="reasons__border-glare-2"></div>
+                                    <div class="reasons__cell-2">
+                                        <div class="reasons__cell-container">
+                                            <div class="reasons__img">
+                                                <img src="img/icon/reasons-logo/skyscrapers.svg" alt="">
+                                            </div>
+                                            <div class="reasons__text-2">
+                                                После успешного завершения курса, мы поможем тебе трудоустроиться
+                                                в Южнокорейские IT компании!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons__separation"></div>
+            </section>
+            <section class="main__intelligence" id="intelligence">
+                <div class="main__intelligence-background"></div>
+                <div class="container">
+                    <div class="intelligence__inner">
+                        <div class="main__intelligence-img">
+                            <div class="intelligence__img-bg"></div>
+                            <div class="intelligence__img-glare-1"></div>
+                            <div class="intelligence__img-glare-2"></div>
+                            <div class="main__intelligence-img-ai">
+                                <img src="img/decor/ai.png" alt="ai">
+                            </div>
+                        </div>
+                        <h2 class="intelligence__title title">
+                            <span class="intelligence__span span">
+                                Искусственный интеллект
+                            </span>
+                            - это круто?
+                        </h2>
+                        <div class="intelligence-check">
+                            <div class="intelligence-check__item">
+                                <div class="intelligence-check__item-img">
+                                    <img src="img/icon/checked_radio_button.svg" alt="">
+                                </div>
+                                <p class="intelligence-check__item-text intelligence-check__item-text--1">
+                                    На данный момент только в Южной Корее ищут 10,000 специалистов в области AI!
+                                </p>
+                            </div>
+                            <div class="intelligence-check__item">
+                                <div class="intelligence-check__item-img">
+                                    <img src="img/icon/checked_radio_button.svg" alt="">
+                                </div>
+                                <p class="intelligence-check__item-text intelligence-check__item-text--2">
+                                    Младшие разработчики искусственного интеллекта без опыта работы могут получать в
+                                    Южной Корее 60,000,000 вон (51,000$) в год. Специалист со средним стажем работы
+                                    может получать уже около 100,000,000 вон (85,000$) в год.
+                                </p>
+                            </div>
+                            <div class="intelligence-check__item">
+                                <div class="intelligence-check__item-img">
+                                    <img src="img/icon/checked_radio_button.svg" alt="">
+                                </div>
+                                <p class="intelligence-check__item-text intelligence-check__item-text--3">
+                                    В США уровень зарплат ещё выше! Младший специалист без опыта работы получает в
+                                    среднем 93,000$ в год. А инженер со средним стажем работы получает уже больше
+                                    140,000$ в год!
+                                </p>
+                            </div>
+                            <div class="intelligence-check__item">
+                                <div class="intelligence-check__item-img">
+                                    <img src="img/icon/checked_radio_button.svg" alt="">
+                                </div>
+                                <p class="intelligence-check__item-text intelligence-check__item-text--4">
+                                    А самое вкусное то, что твоя зарплата будет расти вместе
+                                    с твоими навыками. Стаж не так важен.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="intelligence__button button">
+                            Записаться на ознакомительный вебинар
+                        </a>
+                    </div>
+                </div>
+                <div class="intelligence__separation"></div>
+            </section>
+            <section class="main__info" id="info">
+                <div class="intelligence__separation"></div>
+                <div class="main__info-background"></div>
+                <div class="container">
+                    <div class="info__inner">
+                        <h2 class="info__title title">
+                            <span class="info__span span">
+                                Важно
+                            </span>
+                            понимать что
+                        </h2>
+                        <div class="info__table">
+                            <div class="info__img-border info__img-border--1 border">
+                                <div class="info__border-glare"></div>
+                                <div class="info__bg-img-1">
+                                    <div class="info__bg-img-2">
+                                        <img src="img/content/info-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info__item info__item--1">
+                                <div class="info__item-cell">
+                                    <p class="info__text">
+                                        Искусственный интеллект -
+                                        <br>
+                                        это не одна дисциплина, как думают многие, а совокупность различных между собой
+                                        направлений.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__img-border info__img-border--2 border">
+                                <div class="info__border-glare"></div>
+                                <div class="info__bg-img-1">
+                                    <div class="info__bg-img-2">
+                                        <img src="img/content/info-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info__item info__item--2">
+                                <div class="info__item-cell">
+                                    <p class="info__text">
+                                        Подготовка реально
+                                        <br>
+                                        хороших специалистов
+                                        <br>
+                                        требует времени,
+                                        <br>
+                                        краткосрочные курсы
+                                        <br>
+                                        эффекта
+                                        не дают.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__item info__item--3">
+                                <div class="info__item-cell info__item-cell--2">
+                                    <p class="info__text">
+                                        Большинство менторов никогда не работали над реальными проектами.
+                                        Они изучали все по видеоурокам и книжкам,
+                                        <br>
+                                        и преподают без практики, что очень печально.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__img-border info__img-border--3 border">
+                                <div class="info__border-glare"></div>
+                                <div class="info__bg-img-1">
+                                    <div class="info__bg-img-2">
+                                        <img src="img/content/info-3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info__item info__item--4">
+                                <div class="info__item-cell info__item-cell--2">
+                                    <p class="info__text">
+                                        На многих курсах
+                                        преподают готовые/идеальные кейсы
+                                        <br>
+                                        без всяких сложностей, поэтому студенты после таких курсов не могут
+                                        решать реальные задачи
+                                        на работе.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__img-border info__img-border--4 border">
+                                <div class="info__border-glare"></div>
+                                <div class="info__bg-img-1">
+                                    <div class="info__bg-img-2">
+                                        <img src="img/content/info-4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__separation"></div>
+            </section>
+            <section class="main__why" id="why">
+                <div class="info__separation"></div>
+                <div class="main__why-background"></div>
+                <div class="container">
+                    <div class="why__inner">
+                        <div class="why__glare">
+                            <div class="why__glare-1"></div>
+                            <div class="why__glare-2"></div>
+                        </div>
+                        <div class="main__why-img">
+                            <img src="img/decor/brain.png" alt="">
+                        </div>
+                        <h2 class="why__title title">
+                            Почему именно наш курс?
+                            <span class="info__span span">
+                                Все просто!
+                            </span>
+                        </h2>
+                        <ul class="why__reasons">
+                            <li class="why__reasons-item">
+                                <div class="why__reasons-img">
+                                    <img src="img/icon/check.svg" alt="">
+                                </div>
+                                <p class="why__reasons-text">
+                                    Объясняем сложные вещи простым и доходчивым языком.
+                                </p>
+                            </li>
+                            <li class="why__reasons-item">
+                                <div class="why__reasons-img">
+                                    <img src="img/icon/check.svg" alt="">
+                                </div>
+                                <p class="why__reasons-text">
+                                    Обучаем не просто языку программирования, или одной какой-то
+                                    <br>
+                                    дисциплине, мы обучаем
+                                    полностью всей специальности.
+                                </p>
+                            </li>
+                            <li class="why__reasons-item">
+                                <div class="why__reasons-img">
+                                    <img src="img/icon/check.svg" alt="">
+                                </div>
+                                <p class="why__reasons-text">
+                                    Ознакомляем с содержанием урока только в режиме реального времени. Ты сможешь сразу
+                                    задать вопрос и тут же получить ответы. Мы всегда будем рядом.
+                                </p>
+                            </li>
+                            <li class="why__reasons-item">
+                                <div class="why__reasons-img">
+                                    <img src="img/icon/check.svg" alt="">
+                                </div>
+                                <p class="why__reasons-text">
+                                    Обучение ведет ведущий и действующий специалист в области
+                                    <br>
+                                    искусственного интеллекта
+                                    в Южной Корее.
+                                </p>
+                            </li>
+                            <li class="why__reasons-item">
+                                <div class="why__reasons-img">
+                                    <img src="img/icon/check.svg" alt="">
+                                </div>
+                                <p class="why__reasons-text">
+                                    Обучение проходит в группе по 15 человек, которая внутри делится на 3 команды, и
+                                    каждая команда выполняет собственный проект. Таким образом, студенты смогут
+                                    прочувствовать тонкости командной разработки, и уже на
+                                    <br>
+                                    этапе обучения окунуться в
+                                    рабочую атмосферу AI специалиста.
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="#" class="why__button button">
+                            Записаться на ознакомительный вебинар
+                        </a>
+                    </div>
+                </div>
+                <div class="why__separation"></div>
+            </section>
+            <section class="main__list" id="list">
+                <div class="why__separation"></div>
+                <div class="main__list-background"></div>
+                <div class="container">
+                    <div class="list__inner">
+                        <h2 class="list__title title">
+                            <span class="list__span span">
+                                Что я узнаю
+                            </span>
+                            из этих курсов?
+                        </h2>
+                        <p class="list__inner-text">
+                            Полностью весь курс состоит из 3 частей
+                        </p>
+                        <div class="program__tab-content tab-content tab-content--show">
+                            <ul class="accordion-list">
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__control">
+                                        <h3 class="accordion-list__control-title">
+                                            AI - Junior Level.
+                                            <span class="control-title__span">Продолжительность 1 год</span>
+                                        </h3>
+                                        <div class="accordion-list__control-border border">
+                                            <div class="accordion-list__control-icon-1">
+                                                <div class="accordion-list__control-icon-2">
+                                                    <svg viewBox="0 0 14 9.12109" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14.000000"
+                                                        height="9.121094" fill="none" customFrame="#000000">
+                                                        <path id="Vector"
+                                                            d="M1.06055 1.06055L8.06055 8.06055M12.9392 1.06055L5.93923 8.06055"
+                                                            stroke="rgb(74,188,236)" stroke-width="3" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion-content">
+                                            <ul class="accordion-content__list">
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        1
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Введение.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            В этой секции, мы познакомимся с историей человека, который
+                                                            переквалифицировался в специалиста по искусственному
+                                                            интеллекту
+                                                            и отвечаем на вопрос: "Стоит ли это того, чтобы потратить 2
+                                                            года
+                                                            на изучение искусственного интеллекта?" Также, мы разберём
+                                                            уроки, усвоенные специалистами, прошедших путь от младших до
+                                                            главных специалистов.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        2
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Введение в программирование.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Эта секция начинается с объяснения понятий проблемы, сути и
+                                                            целей искусственного интеллекта. Ты узнаешь в чем разница
+                                                            между данными и информацией. А также что такое качество
+                                                            информации. Мы разберём, что такое алгоритмы, компьютерные
+                                                            программы и язык программирования Python, и начнём работать
+                                                            в интегрированной среде разработки для языка Python. Далее
+                                                            мы поймем суть переменных их свойства и типы. Именно с этой
+                                                            секции ты начнёшь писать свои первые программные коды на
+                                                            языке программирования Python. Мы изучим все аспекты этого
+                                                            удивительного языка. Далее мы разберём такие библиотеки как
+                                                            Numpy, Pandas и Matplotlib. В этой секции ты познакомишься
+                                                            со средой разработки Jupyter Notebook.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        3
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Введение в искусственный интеллект.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Эта секция показывает нам, разницу между линейным и
+                                                            нелинейным программированием. Описывает процесс получение
+                                                            знаний. Также, ты узнаешь, в чем разница между AI, machine
+                                                            learning и deep learning. Также обсудим виды искусственного
+                                                            интеллекта, его применения и примеры.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        4
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Алгоритм machine learning.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            В этих секциях, мы подробно разберём работу алгоритмов
+                                                            machine learning. И ты создашь очень простую, но уже свою
+                                                            модель искусственного интеллекта. Также ты научишься
+                                                            оценивать точность моделей. В этой секции мы подробно начнём
+                                                            разбирать одну из библиотек искусственного интеллекта scikit
+                                                            learn. Здесь же мы разберём другую среду разработки, которая
+                                                            называется spyder.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        5
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Процесс разработки модели искусственного интеллекта и
+                                                            инженерия данных.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Здесь мы подробно обсудим весь процесс разработки модели
+                                                            искусственного интеллекта. Также мы начнём изучение анализа
+                                                            данных и их обработки для обучения искусственного
+                                                            интеллекта. В этой секции я научу тебя практическим примерам
+                                                            анализа и обработки данных от А до Я.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        6
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Отбор фичей.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            В этой секции из всех данных, что у нас есть, мы научимся
+                                                            отбирать только те, что нам нужны для обучения
+                                                            искусственного интеллекта.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        7
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Чек лист почти для всех проектов искусственного интеллекта.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            В этой секции я дам чек лист действий для построения
+                                                            end-to-end проектов искусственного интеллекта.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        8
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Практические занятия.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            На практических занятиях мы научим наши модели
+                                                            искусственного интеллекта следующим вещам: предсказывать
+                                                            нажатие на рекламу пользователем в фейсбуке; определять рак
+                                                            груди; предсказывать ухода в отставку клиентов банка;
+                                                            определять наличие кифоза у детей; определять положительные
+                                                            и отрицательные отзывы yelp; определять положительные и
+                                                            отрицательные отзывы на амазоне; определять спам письма;
+                                                            предсказывать наличие болезней сердца у пациентов;
+                                                            определять износ деталей на токарном станке.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        9
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Deep learning: Искусственные нейронные сети.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            В этой секции ты узнаешь, что такое deep learning и как это
+                                                            работает, также ты поймешь, что такое нейроны и как нейроные
+                                                            сети обучаются. Мы детально разберём все процессы, связанные
+                                                            с нейронными сетями. Ты также познакомишься с библиотекой
+                                                            keras, фреймворком tensorflow и средой разработки google
+                                                            colab.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        10
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Deep learning: конволюционные нейронные сети.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Эта секция посвящена конволюционным нейронным сетям, которые
+                                                            применяются в компьютерном зрении. Мы детально разберём как
+                                                            искусственный интеллект распознает те или иные вещи,
+                                                            например, машины или яблоки.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        11
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Практические занятия.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            На этих занятиях ты разработаешь свои нейронные сети,
+                                                            которые смогут: предсказывать цены автомобилей;
+                                                            предсказывать выходную мощность электростанций (кейс
+                                                            виртуальных сенсоров); предсказывать поломки насоса на
+                                                            основе данных из сенсоров насоса; распознавать рукописные
+                                                            цифры, распознавать элементы одежды, распознавать различные
+                                                            объекты; распознавать повреждённые автомобили; распознавать
+                                                            уличные дорожные знаки для беспилотных автомобилей.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__control">
+                                        <h3 class="accordion-list__control-title">
+                                            AI - Senior Level.
+                                            <span class="control-title__span">Продолжительность 1.5 года.</span>
+                                            <span class="control-title__span-development">В разработке</span>
+                                        </h3>
+                                        <div class="accordion-list__control-border border">
+                                            <div class="accordion-list__control-icon-1">
+                                                <div class="accordion-list__control-icon-2">
+                                                    <svg viewBox="0 0 14 9.12109" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14.000000"
+                                                        height="9.121094" fill="none" customFrame="#000000">
+                                                        <path id="Vector"
+                                                            d="M1.06055 1.06055L8.06055 8.06055M12.9392 1.06055L5.93923 8.06055"
+                                                            stroke="rgb(74,188,236)" stroke-width="3" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion-content">
+                                            <ul class="accordion-content__list">
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        1
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Введение.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Контент в разработке.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <a href="#" class="accordion-list__control">
+                                        <h3 class="accordion-list__control-title">
+                                            AI - Senior Level V2.0.
+                                            <span class="control-title__span">Продолжительность 1.5 года.</span>
+                                            <span class="control-title__span-development">В разработке</span>
+                                        </h3>
+                                        <div class="accordion-list__control-border border">
+                                            <div class="accordion-list__control-icon-1">
+                                                <div class="accordion-list__control-icon-2">
+                                                    <svg viewBox="0 0 14 9.12109" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="14.000000"
+                                                        height="9.121094" fill="none" customFrame="#000000">
+                                                        <path id="Vector"
+                                                            d="M1.06055 1.06055L8.06055 8.06055M12.9392 1.06055L5.93923 8.06055"
+                                                            stroke="rgb(74,188,236)" stroke-width="3" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="accordion-list__content">
+                                        <div class="accordion-content">
+                                            <ul class="accordion-content__list">
+                                                <li class="accordion-content__item">
+                                                    <div class="accordion-content__item-number">
+                                                        1
+                                                    </div>
+                                                    <div class="accordion-content__item-info">
+                                                        <h6 class="accordion-content__title">
+                                                            Введение.
+                                                        </h6>
+                                                        <p class="accordion-content__item-text">
+                                                            Контент в разработке.
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="why__button button">
+                            Записаться на ознакомительный вебинар
+                        </a>
+                    </div>
+                </div>
+                <div class="list__separation"></div>
+            </section>
+            <section class="main__author" id="author">
+                <div class="list__separation"></div>
+                <div class="main__author-background"></div>
+                <div class="container">
+                    <div class="author__inner">
+                        <div class="author__img">
+                            <div class="author__img-glare"></div>
+                            <div class="author__img-bg">
+                                <img src="img/decor/web.png" alt="">
+                            </div>
+                            <div class="author__img-man">
+                                <img src="img/content/author.png" alt="Автор курса">
+                            </div>
+                            <div class="author__person">
+                                <p class="author__name">
+                                    Владимир Ким
+                                </p>
+                                <p class="author__job-title">
+                                    Ведущий специалист
+                                </p>
+                            </div>
+                        </div>
+                        <h2 class="author__title title">
+                            Автор курса
+                        </h2>
+                        <div class="author-inner__content">
+                            <p class="author-inner__content-text">
+                                Основателем курса является Владимир Ким, действующий и ведущий специалист в области
+                                искусственного интеллекта в Южной Корее, который разрабатывал системы искусственного
+                                интеллекта для компаний Samsung SDS, LG science park
+                                и LG digital park.
+                                <br>
+                                <br>
+                                На данный момент, Владимир занимается разработкой виртуальных сенсоров на основе
+                                нейронных сетей.
+                                <br>
+                                <br>
+                                Является одним из авторов диссертации об обработке больших данных для Южнокорейского
+                                института по развитию Интернета.
+                                <br>
+                                <br>
+                                Действующий член ассоциации разработчиков программного обеспечения в Южной Корее.
+                                <br>
+                                <br>
+                                Активно участвует в R&D проектах по внедрению искусственного интеллекта для
+                                государственных предприятий Южной Кореи.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="author__separation"></div>
+            </section>
+            <section class="main__school" id="school">
+                <div class="author__separation"></div>
+                <div class="main__school-background"></div>
+                <div class="container">
+                    <div class="school__inner">
+                        <div class="school__head">
+                            <h2 class="school__title title">
+                                Объявления школы
+                            </h2>
+                            <button class="school__button button-2">
+                                Все объявления
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__slider swiper">
+                    <div class="nav__container">
+                        <div class="school__nav">
+                            <button class="nav__prev" type="button">
+                                <svg viewBox="0 0 21.7529 9.99121" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="21.752930" height="9.991211"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Arrow 1"
+                                        d="M0 -0.75L21 -0.75L21 0.75L0 0.75L0 -0.75ZM19.9393 0L16.227 -3.71231C15.93 -4.0093 15.93 -4.47598 16.227 -4.77297C16.524 -5.06996 16.9907 -5.06996 17.2877 -4.77297L21.5303 -0.53033C21.8273 -0.233345 21.8273 0.233345 21.5303 0.53033L17.2877 4.77297C16.9907 5.06996 16.524 5.06996 16.227 4.77297C15.93 4.47599 15.93 4.0093 16.227 3.71231L19.9393 0Z"
+                                        fill="rgb(255,255,255)" fill-rule="nonzero"
+                                        transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,21.7529,4.99561)" />
+                                </svg>
+                            </button>
+                            <button class="nav__next" type="button">
+                                <svg viewBox="0 0 21.7529 9.99121" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="21.752930" height="9.991211"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Arrow 1"
+                                        d="M0 -0.75L21 -0.75L21 0.75L0 0.75L0 -0.75ZM19.9393 0L16.227 -3.71231C15.93 -4.0093 15.93 -4.47598 16.227 -4.77297C16.524 -5.06996 16.9907 -5.06996 17.2877 -4.77297L21.5303 -0.53033C21.8273 -0.233345 21.8273 0.233345 21.5303 0.53033L17.2877 4.77297C16.9907 5.06996 16.524 5.06996 16.227 4.77297C15.93 4.47599 15.93 4.0093 16.227 3.71231L19.9393 0Z"
+                                        fill="rgb(255,255,255)" fill-rule="nonzero"
+                                        transform="matrix(1,1.22465e-16,1.22465e-16,-1,0,4.99561)" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery__wrapper swiper-wrapper">
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-1.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-1.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-2.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-2.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-3.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-3.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-4.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-4.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-1.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-1.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-2.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-2.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__job" id="job">
+                <div class="main__job-background"></div>
+                <div class="container">
+                    <div class="job__inner">
+                        <div class="job__head">
+                            <h2 class="job__title title">
+                                Вакансии
+                            </h2>
+                            <button class="job__button button-2">
+                                Все вакансии
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery__slider swiper">
+                    <div class="nav__container">
+                        <div class="school__nav">
+                            <button class="nav__prev" type="button">
+                                <svg viewBox="0 0 21.7529 9.99121" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="21.752930" height="9.991211"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Arrow 1"
+                                        d="M0 -0.75L21 -0.75L21 0.75L0 0.75L0 -0.75ZM19.9393 0L16.227 -3.71231C15.93 -4.0093 15.93 -4.47598 16.227 -4.77297C16.524 -5.06996 16.9907 -5.06996 17.2877 -4.77297L21.5303 -0.53033C21.8273 -0.233345 21.8273 0.233345 21.5303 0.53033L17.2877 4.77297C16.9907 5.06996 16.524 5.06996 16.227 4.77297C15.93 4.47599 15.93 4.0093 16.227 3.71231L19.9393 0Z"
+                                        fill="rgb(255,255,255)" fill-rule="nonzero"
+                                        transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,21.7529,4.99561)" />
+                                </svg>
+                            </button>
+                            <button class="nav__next" type="button">
+                                <svg viewBox="0 0 21.7529 9.99121" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="21.752930" height="9.991211"
+                                    fill="none" customFrame="#000000">
+                                    <path id="Arrow 1"
+                                        d="M0 -0.75L21 -0.75L21 0.75L0 0.75L0 -0.75ZM19.9393 0L16.227 -3.71231C15.93 -4.0093 15.93 -4.47598 16.227 -4.77297C16.524 -5.06996 16.9907 -5.06996 17.2877 -4.77297L21.5303 -0.53033C21.8273 -0.233345 21.8273 0.233345 21.5303 0.53033L17.2877 4.77297C16.9907 5.06996 16.524 5.06996 16.227 4.77297C15.93 4.47599 15.93 4.0093 16.227 3.71231L19.9393 0Z"
+                                        fill="rgb(255,255,255)" fill-rule="nonzero"
+                                        transform="matrix(1,1.22465e-16,1.22465e-16,-1,0,4.99561)" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery__wrapper swiper-wrapper">
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-4.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-4.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-3.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-3.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-2.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-2.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-1.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-1.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-4.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-4.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery__slide swiper-slide" data-fslightbox="gallery"
+                            href="img/content/gallery-3.png">
+                            <div class="school__data">
+                                <img src="img/icon/calendar.svg" alt="">
+                                <p class="school__data-text">24 мая 2021</p>
+                            </div>
+                            <div class="gallery__slide-img swiper-slide-img">
+                                <img src="img/content/gallery-3.png" alt="">
+                                <div class="swiper-slide__glare"></div>
+                            </div>
+                            <div class="slide__info">
+                                <h6 class="slide-title">
+                                    Заголовок объявления из несколькиз слов
+                                </h6>
+                                <p class="slide-text">
+                                    Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                    совокупность
+                                    различных между
+                                    собой направлений.
+                                </p>
+                                <a class="details">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="job__separation"></div>
+            </section>
+        </main>
+        <footer class="main__footer">
+            <div class="job__separation"></div>
+            <div class="main__footer-background"></div>
+            <a href="#header" class="button__up">
+                <div class="button__up-img">
+                    <img src="img/icon/arrow-up.svg" alt="">
+                </div>
+                <span class="button__up-animation"></span>
+            </a>
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo">
+                            <img src="img/icon/logo.svg" alt="Логотип компании">
+                        </a>
+                        <div class="footer__contact">
+                            <address class="contact__col">
+                                <div class="contact__col-mail">
+                                    <div class="footer__img-mail">
+                                        <img src="img/icon/mail.svg" alt="">
+                                    </div>
+                                    <a href="veravlaedu@gmail.com" class="footer__mail" type="email">
+                                        veravlaedu@gmail.com
+                                    </a>
+                                </div>
+                                <div class="footer__col-tel">
+                                    <div class="footer__img-tel">
+                                        <img src="img/icon/phone.svg" alt="">
+                                    </div>
+                                    <a href="tel:+821075269192" class="footer__number">
+                                        + 82 (10) 7526-9192
+                                    </a>
+                                </div>
+                            </address>
+                            <address class="footer__socials">
+                                <p class="socials__text">
+                                    Мы в соц сетях
+                                </p>
+                                <ul class="socials__list">
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <img src="img/icon/socials/facebook.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <img src="img/icon/socials/facebook-messenger.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <img src="img/icon/socials/youtube.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <img src="img/icon/socials/whatsapp.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <img src="img/icon/socials/talk.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__line"></div>
+                <div class="footer__copyright-text">
+                    Copyright © 2021 VeraVla edu. All rights reserved
+                </div>
+                <div class="footer__line"></div>
+            </div>
+            <div class="container">
+                <div class="footer__bottom">
+                    <div class="footer__bottom-content">
+                        <div class="footer__bottom-text">
+                            developed by afreeca
+                        </div>
+                        <div class="footer__bottom-img">
+                            <img src="img/icon/afreeca-logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <h3 class="modal__title">
+                <span class="modal__span span">
+                    Записаться
+                </span>
+                на ознакомительный вебинар
+            </h3>
+            <form class="modal__form">
+                <label class="modal__form-label field">
+                    <span>Ваше ФИО:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input" type="" placeholder="Иван Иванович Иванов">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Номер телефона:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input field__input--tel" maxlength="18" id="phone" type="tel"
+                                placeholder="+7 (___) ___-__-__">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Ваш e-mail</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input" type="email" placeholder="E-mail">
+                        </div>
+                    </div>
+                </label>
+                <label class="modal__form-label field">
+                    <span>Выберите дату и время вебинара:</span>
+                    <div class="field__input-border border">
+                        <div class="field__input-bg">
+                            <input class="field__input field__input--date" maxlength="10" id="day"
+                                placeholder="__.__.____">
+                        </div>
+                    </div>
+                </label>
+                <button class="modal-button button" type="submit">
+                    записаться
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="modal__school">
+        <div class="modal__school-window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <div class="modal__school-scroll">
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-1.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-2.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-3.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-4.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-1.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-2.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__job">
+        <div class="modal__job-window">
+            <a class="modal__cancel" href="#">
+                <svg viewBox="0 0 20.2422 20.1213" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.242188" height="20.121307" fill="none"
+                    customFrame="#000000">
+                    <path id="Vector" d="M1.18187 1.06065L19.1819 19.0607M19.0605 1.06065L1.06055 19.0607"
+                        stroke="rgb(0,224.4,255)" stroke-width="3" />
+                </svg>
+            </a>
+            <div class="modal__school-scroll">
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-4.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-3.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-2.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-2.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-1.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-1.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-4.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-4.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__school-slide" href="img/content/gallery-3.png">
+                    <div class="modal__school-data">
+                        <img src="img/icon/calendar.svg" alt="">
+                        <p class="school__data-text">24 мая 2021</p>
+                    </div>
+                    <div class="modal__school-slide-img">
+                        <img src="img/content/gallery-3.png" alt="">
+                        <div class="modal__school-glare"></div>
+                    </div>
+                    <div class="slide__info">
+                        <h6 class="slide-title">
+                            Заголовок объявления из несколькиз слов
+                        </h6>
+                        <p class="slide-text">
+                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                            совокупность
+                            различных между
+                            собой направлений.
+                        </p>
+                        <a class="details">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
