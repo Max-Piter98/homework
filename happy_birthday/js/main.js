@@ -87,3 +87,29 @@
     });
 
 })(jQuery);
+
+// Модалка
+
+const modal = document.querySelector('.modal')
+const modalButton = document.querySelectorAll('.primary-btn')
+
+modalButton.forEach(button => {
+    button.addEventListener('click', openModal)
+})
+
+modal.addEventListener('click', closeModal)
+
+function openModal(e) {
+    e.preventDefault()
+    document.body.classList.toggle('body--opened-modal')
+}
+
+function closeModal(e) {
+    e.preventDefault()
+
+    const target = e.target
+
+    if (target.closest('.modal_cancel') || target.classList.contains('modal')) {
+        document.body.classList.remove('body--opened-modal')
+    }
+}
