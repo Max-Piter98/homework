@@ -40,6 +40,7 @@ body {
 	font-smoothing: antialiased;
 	scroll-behavior: smooth;
 	scrollbar-gutter: stable;
+	overflow-x: hidden !important;
 }
 
 h1,
