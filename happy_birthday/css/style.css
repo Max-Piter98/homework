@@ -1639,8 +1639,8 @@ ol {
 }
 
 .body--opened-modal .modal {
-    opacity: 1;
-    visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 .modal {
@@ -1658,26 +1658,26 @@ ol {
 }
 
 .modal_window {
-    position: relative;
-    max-width: 100%;
+	position: relative;
+	max-width: 100%;
 	font-weight: 700;
 	font-size: 50px;
 	color: white;
-    box-shadow: 0px 20px 50px 0px #00000087;
+	box-shadow: 0px 20px 50px 0px #00000087;
 }
 
 .modal_cancel {
-    position: absolute;
-    top: 18px;
-    right: 18px;
+	position: absolute;
+	top: 18px;
+	right: 18px;
 }
 
 .modal_cancel path {
-    transition: var(--transition);
+	transition: var(--transition);
 }
 
 .modal_cancel:hover path {
-    stroke-width: 4;
+	stroke-width: 4;
 }
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
@@ -1742,8 +1742,8 @@ ol {
 	}
 
 	.col-lg-3-2 {
-	max-width: 100%;
-}
+		max-width: 100%;
+	}
 }
 
 /* Large Mobile: 480px */
@@ -1921,5 +1921,9 @@ ol {
 
 	.contact-text .ct-item .ci-icon span {
 		font-size: 22px;
+	}
+
+	.member-section_h2 {
+		font-size: 33px !important;
 	}
 }
