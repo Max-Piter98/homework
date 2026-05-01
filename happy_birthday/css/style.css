@@ -1659,6 +1659,9 @@ ol {
 
 .modal_window {
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	max-width: 100%;
 	font-weight: 700;
 	font-size: 50px;
@@ -1679,6 +1682,18 @@ ol {
 .modal_cancel:hover path {
 	stroke-width: 4;
 }
+
+@media (max-width: 600px) {
+	video {
+		width: 100%;
+	}
+}
+
+/* @media (max-width: 400px) {
+	video {
+		width: 100%;
+	}
+} */
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
